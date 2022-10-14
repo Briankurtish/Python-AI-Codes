@@ -7,7 +7,12 @@ trained_face_data = cv2.CascadeClassifier(
 
 
 # choose an image to detect faces in
-img = cv2.imread('3Faces.jpg')
+#img = cv2.imread('3Faces.jpg')
+
+# To Capture Video from webcam
+webcam = cv2.VideoCapture(0)
+key = cv2.waitKey(1)
+
 
 # Must convert to grayscale
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
